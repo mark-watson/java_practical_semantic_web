@@ -2,7 +2,7 @@
 
 This book is currently (March 2010) a work in progress and will be released around June 2010 as a print book (Lulu.com), a paid for PDF file (Lulu.com), and a free (identical) PDF file.
 
-You can get the free PDF on my Open Content web page http://www.markwatson.com/opencontent/
+You can get the free PDF on my Open Content web page http://www.markwatson.com/opencontent/. A partially complete (about 130 pages) PDF is now available.
 
 All of the book software examples that I wrote are licensed using the AGPL license. Additionally, if you purchase either the PDF or print book then you can, if you want to do so, use the book example software under the terms of the license in the file commerciallicense.txt
 
@@ -13,7 +13,7 @@ While most of the software is written in Java, I have made an attempt to also su
 == Examples work with AllegroGraph 4.0 and Sesame
 
 I have written compatibility wrappers so the book examples can use either the open source Sesame RDF repository
-or the commercial ALlegroGraph product. My wrapper for Sesame adds support for geolocation and text indexing and search.
+or the commercial AllegroGraph product. My wrapper for Sesame adds support for geolocation and text indexing and search.
 
 == This project is a work in progress
 
