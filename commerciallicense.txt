@@ -1,0 +1,72 @@
+KnowledgeBooks.com Commercial Use License for SOFTWARE
+
+Copyright 2007-2010 by Mark Watson (www.markwatson.com, www.knowledgebooks.com)
+
+This is an alternative license to the AGPL version 3 (http://www.gnu.org/licenses/agpl-3.0.txt)
+that is granted to you by Mark Watson in return for a negotiated fee. Payment of the
+negotiated fee (or the purchase of a book written by Mark Watson if the licensed
+SOFTWARE is part of the book's example software) can be via Mark Watson's PayPal
+account or by check. Purchasers of the accompanying book can deploy applications using
+the book example code to a single server, under the terms of this license. Readers
+of the free PDF version of the book may use the book example software under the terms
+of the AGPL.
+
+SOFTWARE IS LICENSED AS FOLLOWS
+
+(a) Installation and Use. Mark Watson grants Licensee the right to install
+and use each licensed copy of the SOFTWARE PRODUCT on a single computer ("server")
+solely for Licensee's own business purposes. Licensee may not:
+  (i)   use the SOFTWARE to process data of any other party except when it runs on a single server,
+  (ii)  permit the SOFTWARE to be used to process data of any other party, or
+  (iii) modify, translate, rent, lease, lend, copy, transfer or assign all or
+        part of the SOFTWARE, or any rights granted by this Agreement,
+        to any other persons.
+
+(b) Backup Copies. Licensee may make copies of the SOFTWARE only as may be
+necessary for backup and archival purposes, or for development use on your
+development computer.
+
+SOFTWARE LICENSE TERMS
+
+The license term shall be perpetual.
+
+Licensee acknowledges that no title to the intellectual property in the SOFTWARE
+is transferred to Licensee. All title and ownership rights, including but not
+limited to copyright and other intellectual property rights, in and to the SOFTWARE
+and any copies thereof are the exclusive property of Mark Watson.
+
+LIMITATION OF WARRANTY
+
+THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTIES, INCLUDING EXPRESS OR
+IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS OF A PARTICULAR PURPOSE.
+Mark Watson does not warrant or assume responsibility for the accuracy or
+completeness of any information or other items contained within the SOFTWARE.
+Mark Watson makes no warranties respecting any harm that may be caused by the
+transmission of a computer virus, worm, time bomb, logic bomb, or other such
+computer program.
+
+Mark Watson further expressly disclaims any warranty or representation to users
+of the SOFTWARE or to any third party.
+
+LIMITATION OF LIABILITY
+
+In no event will Mark Watson be liable to Licensee for any indirect, special,
+incidental, consequential or punitive damages (including, without limitation,
+lost profits, lost sales, business interruption, loss of data, or lost
+information) arising out of the use of or inability to use the SOFTWARE.
+
+GOVERNING LAW
+
+This LICENSE and all matters arising out of or relating hereto, shall be
+governed by and construed in accordance with the substantive laws of the
+State of Arizona, U.S.A, without regard to its choice of law or conflict of
+law provisions.
+
+JURISDICTION
+
+The Parties agree that any controversy or claim arising out of or relating
+to this LICENSE which Parties are not able to settle amicably, will be settled
+by binding arbitration conducted before a single arbitrator who is knowledgeable
+in the field of law as it pertains to the subject matter, and be conducted in the
+State of Arizona and be conducted in the English language.
+

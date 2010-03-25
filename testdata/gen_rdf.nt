@@ -1,0 +1,38 @@
+<http://www.knowledgebooks.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowledgebooks.com/rdf/webpage> .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/contents> "Knowledgebooks.com: AI Technology for Knowledge Management, AI, and the Semantic Web for the Java, Ruby, and Common Lisp Platforms HOME DEMO CONTACT RESEARCH News OWL Ontology AI Technologies ABOUT People Press Location Knowledgebooks.com is a sole proprietorship company owned by Mark Watson created as a vehicle for promoting AI and Semantic Web technology. Knowledgebooks.com Technologies: Natural Language Processing (NLP) tools Text clustering and categorization tools 'Semantic Scraping' tools: entity extraction Using multiple knowledge sources: Open Calais, Metaweb and a proprietary KnowledgeBooks.com system that is similar to Open Calais.   As a developer, what problems does the KBSportal bundle product solve for you? Quick start for using Semantic Web technologies - reduces your learning curve. Low cost solution for designing and implementing custom document repositories with full search and indexing support, and document clustering functionality. Generate short summaries of any text documents. Utilities for working with many rich document formats. At this time the KBSportal (and supporting KB_bundle) software is not available as a commercial product. It is available for use by my customers: I use the KBSportal and Knowledgebooks.com software in my consulting work. I use the Sesame RDF/RDFS/OWL libraries on the Java platform and the Franz AllegroGraph commercial product for development on the Common Lisp platform. I also offer Semantic Web and Knowledge Management consulting services.      " .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/containsPerson> "Mark Watson" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Person> "Mark Watson" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/IndustryTerm> "Low cost solution" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/IndustryTerm> "Web technologies" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/IndustryTerm> "Web technology" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/IndustryTerm> "bundle product" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/ProgrammingLanguage> "Common Lisp" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/ProgrammingLanguage> "Java" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/ProgrammingLanguage> "Ruby" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "AI Technologies" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "AI Technology" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "Java" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "Knowledge Management" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "Natural Language Processing" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "RDF" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "Semantic Web technologies" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "Semantic Web technology" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Technology> "artificial intelligence" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Company> "KBSportal" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Company> "Knowledgebooks.com" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/Company> "Knowledgebooks.com Technologies" .
+<http://www.knowledgebooks.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowledgebooks.com/rdf/webpage> .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/contents> "Knowledgebooks.com: AI Technology for Knowledge Management, AI, and the Semantic Web for the Java, Ruby, and Common Lisp Platforms HOME DEMO CONTACT RESEARCH News OWL Ontology AI Technologies ABOUT People Press Location Knowledgebooks.com is a sole proprietorship company owned by Mark Watson created as a vehicle for promoting AI and Semantic Web technology. Knowledgebooks.com Technologies: Natural Language Processing (NLP) tools Text clustering and categorization tools 'Semantic Scraping' tools: entity extraction Using multiple knowledge sources: Open Calais, Metaweb and a proprietary KnowledgeBooks.com system that is similar to Open Calais.   As a developer, what problems does the KBSportal bundle product solve for you? Quick start for using Semantic Web technologies - reduces your learning curve. Low cost solution for designing and implementing custom document repositories with full search and indexing support, and document clustering functionality. Generate short summaries of any text documents. Utilities for working with many rich document formats. At this time the KBSportal (and supporting KB_bundle) software is not available as a commercial product. It is available for use by my customers: I use the KBSportal and Knowledgebooks.com software in my consulting work. I use the Sesame RDF/RDFS/OWL libraries on the Java platform and the Franz AllegroGraph commercial product for development on the Common Lisp platform. I also offer Semantic Web and Knowledge Management consulting services.      " .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/discusses/person> _:fbperson1 .
+
+
+_:fbperson1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowledgebooks.com/rdfs/entity/person> .
+
+
+_:fbperson1 <http://xmlns.com/foaf/0.97/name> "Mark Watson" .
+
+
+_:fbperson1 <http://knowledgebooks.com/rdf/freebase/id> "guid/9202a8c04000641f80000000146fb902" .
+_:drperson1 <http://knowledgebooks.com/rdf/personName> "Mark Watson" .
+<http://www.knowledgebooks.com> <http://knowledgebooks.com/rdf/containsPerson> _:drperson1 .
+_:drperson1 <http://knowledgebooks.com/rdf/d2r_uri> "<http://localhost:2020/resource/customers/3>" .
