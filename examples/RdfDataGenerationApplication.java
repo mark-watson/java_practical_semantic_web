@@ -5,7 +5,6 @@
  * http://markwatson.com/commerciallicense.txt
  */
 
-import com.freebase.api.Freebase;
 import com.knowledgebooks.info_spiders.OpenCalaisClient;
 import com.knowledgebooks.info_spiders.WebSpider;
 import com.knowledgebooks.nlp.ExtractNames;
@@ -86,8 +85,8 @@ public class RdfDataGenerationApplication {
     for (String key : results.keySet()) {
       System.out.println("  " + key + ": " + results.get(key));
       for (Object val : results.get(key)) {
-        String property = "<http://knowledgebooks.com/rdf/" + key + ">";
         if (("" + val).length() > 0) {
+          String property = "<http://knowledgebooks.com/rdf/" + key + ">";
           out.println("<" + uri + "> <http://knowledgebooks.com/rdf/" + key + "> \"" + val + "\" .");
           HashSet<String> hs = (HashSet<String>) for_shared_properties.get(property);
           if (hs == null) hs = new HashSet<String>();
@@ -129,7 +128,7 @@ public class RdfDataGenerationApplication {
           float url_similarity = score_mapset(shared_properties_for_all_sources.get(url_1), shared_properties_for_all_sources.get(url_2));
           if (url_similarity > 12f) {
             out.println("<" + url_1 + "> <http://knowledgebooks.com/rdf/high_similarity> <" + url_2 + "> .");
-          } else if (url_similarity > 5f) {
+          } else if (url_similarity > 8f) {
             out.println("<" + url_1 + "> <http://knowledgebooks.com/rdf/medium_similarity> <" + url_2 + "> .");
           } else if (url_similarity > 5f) {
             out.println("<" + url_1 + "> <http://knowledgebooks.com/rdf/low_similarity> <" + url_2 + "> .");
@@ -147,14 +146,14 @@ public class RdfDataGenerationApplication {
       Set<String> s1 = set_1.get(property_1);
       Set<String> s2 = set_2.get(property_1);
       if (s2 != null) {
-        ret += score_arraylist(s1, s2);
+        ret += score_sets(s1, s2);
       }
     }
     System.out.println(" -------------------- score_mapset: " + "  ret = " + ret);
     return ret;
   }
 
-  private float score_arraylist(Set<String> l_1, Set<String> l_2) {
+  private float score_sets(Set<String> l_1, Set<String> l_2) {
     float ret = 0f;
     for (String s : l_1) {
       if (l_2.contains(s)) ret += 1f;

@@ -1,4 +1,4 @@
-= Companion Software examples for the book "Practical Semantic Web Programming (Java, Scala, Clojure, and JRuby Edition)"
+= Companion software examples for the book "Practical Semantic Web Programming (Java, Scala, Clojure, and JRuby Edition)"
 
 This book is currently (March 2010) a work in progress and will be released around June 2010 as a print book (Lulu.com), a paid for PDF file (Lulu.com), and a free (identical) PDF file.
 

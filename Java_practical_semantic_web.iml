@@ -7,6 +7,11 @@
     <facet type="Scala" name="Scala">
       <configuration />
     </facet>
+    <facet type="JRUBY" name="JRuby">
+      <configuration number="0">
+        <JRUBY_FACET_CONFIG_ID NAME="JRUBY_SDK_NAME" VALUE="" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />

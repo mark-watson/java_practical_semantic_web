@@ -86,10 +86,7 @@ public class EntityToD2RHelpers {
     return "_:dr" + name_type + blank_node_count++;
   }
   static long blank_node_count = 1;
-  private static String n3_to_nt(String namespace_uri) {
-    int index = namespace_uri.indexOf(":");
-    return "<http://localhost:2020/vocab/resource/" + namespace_uri.substring(index+1) + ">";
-  }
+
   // for testing only:
   public static void main(String[] args) throws Exception {
     List<String> people = new ArrayList<String>();
