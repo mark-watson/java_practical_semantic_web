@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class TestWebSpider {
   static public void main(String[] args) throws Exception {
-    WebSpider ws = new WebSpider("http://www.knowledgebooks.com", 20);
+    WebSpider ws = new WebSpider("http://www.knowledgebooks.com", 3);
     for (List<String> ls : ws.url_content_lists) {
       String url = ls.get(0);
       String text = ls.get(1);

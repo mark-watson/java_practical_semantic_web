@@ -26,7 +26,7 @@ public class WebSpider {
     Set<String> already_visited = new HashSet<String>();
     urls.add(root_url);
     int num_fetched = 0;
-    while (num_fetched < max_returned_pages && !urls.isEmpty()) {
+    while (num_fetched <= max_returned_pages && !urls.isEmpty()) {
       try {
         String url_str = urls.remove(0);
         if (url_str.toLowerCase().indexOf(host) > -1 && url_str.indexOf("https:") == -1 && !already_visited.contains(url_str)) {

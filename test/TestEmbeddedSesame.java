@@ -36,16 +36,16 @@ public class TestEmbeddedSesame {
     ts.deleteRepository("test-repo1");
     ts.createRepository("test-repo1");
     ts.registerFreetextPredicate("http://example.org/ontology/name");  // do this before adding triples
-    ts.registerFreetextPredicate("http://knowledgebooks.com/ontology/#summary");  // do this before adding triples
+    ts.registerFreetextPredicate("http://knowledgebooks.com/ontology/summary");  // do this before adding triples
     ts.initializeGeoLocation(3d);
 
-    ts.addTriple("<http://kbsportal.com/oak_creek_flooding>", "<http://knowledgebooks.com/ontology/#storyType>", "<http://knowledgebooks.com/ontology/#disaster>");
-    ts.addTriple("<http://kbsportal.com/oak_creek_flooding>", "<http://knowledgebooks.com/ontology/#summary>", "Oak Creek flooded last week affecting 5 businesses");
+    ts.addTriple("<http://kbsportal.com/oak_creek_flooding>", "<http://knowledgebooks.com/ontology/storyType>", "<http://knowledgebooks.com/ontology/disaster>");
+    ts.addTriple("<http://kbsportal.com/oak_creek_flooding>", "<http://knowledgebooks.com/ontology/summary>", "Oak Creek flooded last week affecting 5 businesses");
     ts.addTriple("<http://kbsportal.com/oak_creek_flooding>", "http://example.org/ontology/name", "Beth");
     ts.addTriple("http://example.org/people/alice", Triple.RDF_TYPE, "http://example.org/people/alice");
     ts.addTriple("http://example.org/people/alice", "http://example.org/ontology/name", "Alice");
     ts.addTriple("http://example.org/people/alice", Triple.RDF_LOCATION, ts.latLonToLiteral(+37.783333, -122.433334));
-    String sparql_query = "SELECT ?subject ?object WHERE { ?subject <http://knowledgebooks.com/ontology/#storyType> ?object . }";
+    String sparql_query = "SELECT ?subject ?object WHERE { ?subject <http://knowledgebooks.com/ontology/storyType> ?object . }";
     List<List<String>> results = ts.query(sparql_query);
     for (List<String> result : results) System.out.println("result: " + result);
     results = ts.getLocations(+37.113333d, -122.113334d, 500d);
