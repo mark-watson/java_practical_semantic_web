@@ -2,7 +2,7 @@
 
 This book is currently (March 2010) a work in progress and will be released around June 2010 as a print book (Lulu.com), a paid for PDF file (Lulu.com), and a free (identical) PDF file.
 
-You can get the free PDF on my Open Content web page http://www.markwatson.com/opencontent/. A partially complete (about 130 pages) PDF is now available.
+You can get the free PDF on my Open Content web page http://www.markwatson.com/opencontent/. A partially complete (about 155 pages) PDF is now available.
 
 All of the book software examples that I wrote are licensed using the AGPL license. Additionally, if you purchase either the PDF or print book then you can, if you want to do so, use the book example software under the terms of the license in the file commerciallicense.txt
 
