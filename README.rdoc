@@ -1,4 +1,4 @@
-= Companion software examples for the book "Practical Semantic Web Programming (Java, Scala, Clojure, and JRuby Edition)"
+= Companion software examples for the book "Practical Semantic Web and Linked Data Applications (Java, Scala, Clojure, and JRuby Edition)"
 
 You can get the free PDF of this book on my Open Content web page http://www.markwatson.com/opencontent/.
 
@@ -15,6 +15,6 @@ While most of the software is written in Java, I have made an attempt to also su
 I have written compatibility wrappers so the book examples can use either the open source Sesame RDF repository
 or the commercial AllegroGraph product. My wrapper for Sesame adds support for geolocation and text indexing and search.
 
-Currently (May 9, 2010) AllegroGraph version 4 has not been released to the public so for a short while you can run the examples using Sesame and my wrapper that adds geolocation and text search to Sesame.
+Currently (May 9, 2010) AllegroGraph version 4 has not been released to the public but you can run the examples using Sesame and my wrapper that adds geolocation and text search to Sesame. I expect AllegroGraph 4 to be released soon (I have been using the beta since 12/2009).
 
 -Mark Watson
