@@ -128,8 +128,8 @@ public class ExtractNames {
    * @return
    */
   public boolean isPlaceName(String name) {
-    if (placeNameHash.get(name) != null)
-      System.out.println("* place name: " + name + ", placeNameHash.get(name): " + placeNameHash.get(name));
+    //if (placeNameHash.get(name) != null)
+    //  System.out.println("* place name: " + name + ", placeNameHash.get(name): " + placeNameHash.get(name));
     return placeNameHash.get(name) != null;
   }
 

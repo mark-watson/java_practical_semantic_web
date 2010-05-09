@@ -1,4 +1,5 @@
 import com.knowledgebooks.nlp.ExtractNames;
+import com.knowledgebooks.nlp.KeyPhraseExtractionAndSummary;
 import com.knowledgebooks.nlp.util.ScoredList;
 
 /**
@@ -59,6 +60,10 @@ public class TestExtractNames {
         ret1[0].getValuesAsString());
       System.out.println("Place names: " +
         ret1[1].getValuesAsString());
+
+      // also text summarization:
+      KeyPhraseExtractionAndSummary kp = new KeyPhraseExtractionAndSummary("President Jane Smith spoke to Congress about tax and military appropriations. The subject of the economy was key. Then she left for Mexico.");
+      System.out.println("\n\nTesting summary:\n" + kp.getSummary());
     }
   }
 }

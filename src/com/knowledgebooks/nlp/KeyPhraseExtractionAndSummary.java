@@ -32,13 +32,13 @@ import java.util.List;
 public class KeyPhraseExtractionAndSummary {
   private PhraseList pl = new PhraseList();
   // (defun get-key-summarization (word-vector key-word-rankings &aux x y z v (ret '()))
-  private String words;
+  private Document document;
 
   /**
    * @param text
    */
   public KeyPhraseExtractionAndSummary(String text) {
-    Document document = new Document(text);
+    document = new Document(text);
     Stemmer stemmer = new Stemmer();
 
     List<String> stems = new ArrayList<String>(document.getNumWords());
@@ -135,18 +135,12 @@ public class KeyPhraseExtractionAndSummary {
     //    System.out.println("   score:" + pl.getScore(i)+", phrase: "+pl.getPhrase(i));
     //}
     String ret = "";
-    System.out.println("GETTING SUMMARY: pl.size()=" + pl.size());
-    if (pl.size() == 0) ret = "";
-    else if (pl.size() == 1) ret = pl.getPhrase(0);
+    //System.out.println("GETTING SUMMARY: pl.size()=" + pl.size());
+    if (pl.size() == 1) ret = pl.getPhrase(0);
       /*else if (pl.getScore(0) > (2 * pl.getScore(1))) ret = pl.getPhrase(0);
 else if (pl.getPhrase(0).length() > 80)  ret = pl.getPhrase(0);*/
     else ret = pl.getPhrase(0) + "  " + pl.getPhrase(1);
     ret = ret.trim();
-    if (ret.length() < 78) {
-      int len = words.length();
-      if (len > 60) len = 60;
-      ret = words.substring(0, len) + "...";
-    }
     return ret;
   }
 

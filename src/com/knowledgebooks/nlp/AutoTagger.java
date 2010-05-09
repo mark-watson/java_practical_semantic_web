@@ -1,16 +1,16 @@
 package com.knowledgebooks.nlp;
 
+import com.knowledgebooks.nlp.util.NameValue;
 import com.knowledgebooks.public_domain.Stemmer;
-
-import java.io.FileInputStream;
-import java.util.*;
-import javax.xml.parsers.*;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.knowledgebooks.nlp.util.NameValue;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.*;
 
 /**
  * Associate pre-trained classification categories (tags) with input text: assigns
@@ -41,7 +41,18 @@ public class AutoTagger {
     DefaultHandler handler = new TagsSAXHandler();
     SAXParserFactory factory = SAXParserFactory.newInstance();  // Use the default non-validating parser
     try {
-      FileInputStream xml_input_stream = new FileInputStream(System.getProperty("user.dir") + "/" + "data/tags.xml");
+      System.err.println("Loading tag.xml for auto classification...");
+      InputStream xml_input_stream = handler.getClass().getClassLoader().getResourceAsStream("data/tags.xml");
+      //if (xml_input_stream == null) xml_input_stream = handler.getClass().getClassLoader().getResourceAsStream("data/tags.xml");
+      //if (xml_input_stream == null) xml_input_stream = handler.getClass().getClassLoader().getResourceAsStream("com/knowledgebooks/nlp/data/tags.xml");
+      //System.err.println("1. xml_input_stream = " + xml_input_stream);
+      if (xml_input_stream == null) {
+        xml_input_stream = new FileInputStream(System.getProperty("user.dir") + "/" + "data/tags.xml");
+        //System.err.println("2. xml_input_stream = " + xml_input_stream);
+      }
+
+
+      //FileInputStream xml_input_stream = new FileInputStream(System.getProperty("user.dir") + "/" + "data/tags.xml");
       SAXParser saxParser = factory.newSAXParser();
       saxParser.parse(xml_input_stream, handler);
     } catch (Throwable t) {
