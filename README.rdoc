@@ -15,11 +15,6 @@ While most of the software is written in Java, I have made an attempt to also su
 I have written compatibility wrappers so the book examples can use either the open source Sesame RDF repository
 or the commercial AllegroGraph product. My wrapper for Sesame adds support for geolocation and text indexing and search.
 
-== This project is a work in progress
-
-Hopefully the book example programs will be stable and ready for general use by May 2010.
-
-I use IntelliJ for development for Java, Scala, and Clojure. When the book examples are complete
-I will add an ant build.xml file to build and run the examples.
+Currently (May 9, 2010) AllegroGraph version 4 has not been released to the public so for a short while you can run the examples using Sesame and my wrapper that adds geolocation and text search to Sesame.
 
 -Mark Watson
