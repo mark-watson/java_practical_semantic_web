@@ -15,6 +15,6 @@ While most of the software is written in Java, I have made an attempt to also su
 I have written compatibility wrappers so the book examples can use either the open source Sesame RDF repository
 or the commercial AllegroGraph product. My wrapper for Sesame adds support for geolocation and text indexing and search.
 
-Currently (May 9, 2010) AllegroGraph version 4 has not been released to the public but you can run the examples using Sesame and my wrapper that adds geolocation and text search to Sesame. I expect AllegroGraph 4 to be released soon (I have been using the beta since 12/2009).
+As of June 2010 you can download the free edition of AllegroGraph version 4 at http://www.franz.com/agraph/downloads/
 
 -Mark Watson

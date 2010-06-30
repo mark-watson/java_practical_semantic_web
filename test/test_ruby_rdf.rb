@@ -1,8 +1,8 @@
 require 'src/rdf_ruby'
 require 'pp'
 
-rdf = RdfRuby.sesame
-#rdf = RdfRuby.allegrograph
+#rdf = RdfRuby.sesame
+rdf = RdfRuby.allegrograph
 rdf.delete_repository("rtest_repo")
 rdf.create_repository("rtest_repo")
 rdf.register_freetext_predicate("http://example.org/ontology/name")
