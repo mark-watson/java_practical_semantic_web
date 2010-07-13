@@ -17,6 +17,6 @@ or the commercial AllegroGraph product. My wrapper for Sesame adds support for g
 
 As of June 2010 you can download the free edition of AllegroGraph version 4 at http://www.franz.com/agraph/downloads/
 
-=== 7/13/2010 note: current AG 4.04 release vreaks geospatial queries: a new 4.1 release in AUgust will fix this.
+=== 7/13/2010 note: current AG 4.04 release breaks geospatial queries: a new 4.1 release in August will fix this.
 
 -Mark Watson
