@@ -5,17 +5,14 @@ import org.openrdf.model.Literal;
 import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
 import org.openrdf.model.Value;
-import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.query.BindingSet;
 import org.openrdf.query.QueryLanguage;
 import org.openrdf.query.TupleQuery;
 import org.openrdf.query.TupleQueryResult;
-import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryResult;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by IntelliJ IDEA.
@@ -174,7 +171,9 @@ public class AllegroGraphServerProxy implements RdfServiceProxy {
   }
 
   public void registerFreetextPredicate(String predicate) throws Exception {
-    conn.registerFreetextPredicate(valueFactory.createURI(predicate));
+    //conn.registerFreetextPredicate(valueFactory.createURI(predicate));
+    // NOTE: you would want to change this in any sort of production code:
+    conn.createFreetextIndex("index"+System.currentTimeMillis(), new URI[]{valueFactory.createURI(predicate)});
     //if (Triple.RDF_LOCATION == null) Triple.RDF_LOCATION = location;
   }
 
