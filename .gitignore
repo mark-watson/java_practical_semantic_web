@@ -1,5 +1,7 @@
 log/*
 tmp/*
+.idea/*
+Java_practical_semantic_web.iml
 *.sqlite
 *.sqlite3
 doc/api
