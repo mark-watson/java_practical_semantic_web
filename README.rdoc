@@ -17,6 +17,17 @@ or the commercial AllegroGraph product. My wrapper for Sesame adds support for g
 
 As of June 2010 you can download the free edition of AllegroGraph version 4 at http://www.franz.com/agraph/downloads/
 
+== Using IntelliJ
+
+Using the free community version of IntelliJ 10, make sure the Clojure and Scala plugins are installed (should be by default), set default JDK version to 5.0, create a new project "Create Java project using existing sources" and make sure do include all of the JAR files in the lib sub directory into the project's required resources (do this by "Open Module Settings", click the "Dependencies" tab, Add -> "Single Entry Module Library...", select all JAR files in lib and the Sesame sub directory of lib, hit "Apply". Then make sure the test directory is in your source path.).
+
+You should then be able to run any of the examples by right mouse clicking any file in the test directory and choosing the "Run..." option.
+
+== Using Eclipse
+
+The directions are similar to those for IntelliJ: create a new Java Eclipse project, import the example directory from this git repository, make sure that all JAR files in the lib directory are imported as external JAR files, and then run the Java test programs in the test directory. Note: I am not an Eclipse user: if anyone will donate directions for installing and running the Eclipse Clojure and Scala plugins, I will add those directions here.
+
+
 === 7/13/2010 note: current AG 4.04 release breaks geospatial queries: a new 4.1 release in August will fix this.
 
 -Mark Watson
