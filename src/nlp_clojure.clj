@@ -3,22 +3,21 @@
 ;; Alternative commercial license used under special arrangement (contact markw <at> markwatson <dot> com):
 ;; http://markwatson.com/commerciallicense.txt
 
-(ns nlp_clojure)
-
-(import '(com.knowledgebooks.nlp AutoTagger KeyPhraseExtractionAndSummary ExtractNames)
-  '(com.knowledgebooks.nlp.util NameValue ScoredList))
+(ns nlp-clojure
+  (:import (com.knowledgebooks.nlp AutoTagger KeyPhraseExtractionAndSummary ExtractNames)
+           (com.knowledgebooks.nlp.util NameValue ScoredList)))
 
 (def auto-tagger (AutoTagger.))
 (def name-extractor (ExtractNames.))
 
-;; utility:
-(defn to-string [obj] (.toString obj))
+(defn get-auto-tags [text]
+  (map str (seq (.getTags auto-tagger text))))
 
-(defn get-auto-tags [text] (seq (map to-string (.getTags auto-tagger text))))
 (defn get-names [text]
   (let [[names places] (.getProperNames name-extractor text)]
     [(seq (.getStrings names))
      (seq (.getStrings places))]))
+
 (defn get-summary [text]
-  (.getSummary (new KeyPhraseExtractionAndSummary text)))
+  (.getSummary (KeyPhraseExtractionAndSummary. text)))
 

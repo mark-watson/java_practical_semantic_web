@@ -3,12 +3,8 @@
 ;; Alternative commercial license used under special arrangement (contact markw <at> markwatson <dot> com):
 ;; http://markwatson.com/commerciallicense.txt
 
-(ns sparql_client_clojure)
+(ns sparql-client-clojure
+  (:import (com.knowledgebooks.rdf SparqlClient)))
 
-(import '(com.knowledgebooks.rdf SparqlClient))
-
-(defn convert-to-map [vb]
-  (into {} vb))
-
-(defn sparql-query [endpoint_uri query]
-  (seq (map convert-to-map (.variableBindings (new SparqlClient endpoint_uri query)))))
+(defn sparql-query [endpoint-uri query]
+  (seq (map #(into {} %) (.variableBindings (new SparqlClient endpoint-uri query)))))
