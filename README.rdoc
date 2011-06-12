@@ -32,4 +32,4 @@ The directions are similar to those for IntelliJ: create a new Java Eclipse proj
 
 -Mark Watson
 
-=== 3/12/2011 Thaks to Alex Ott for Clojure code improvements and edits for my book.
+=== 3/12/2011 Thanks to Alex Ott for Clojure code improvements and edits for my book.
