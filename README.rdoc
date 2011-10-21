@@ -4,7 +4,7 @@ You can get the free PDF of this book on my Open Content web page http://www.mar
 
 You can order a print book (or a paid for PDF) from Lulu: https://www.lulu.com/commerce/index.php?fBuyContent=10914825
 
-All of the book software examples that I wrote are licensed using the AGPL license. Additionally, if you purchase either the PDF or print book then you can, if you want to do so, use the book example software under the terms of the license in the file commerciallicense.txt
+All of the book software examples that I wrote are licensed using the LGPL license version 3.
 
 I use a variety of 3rd party JAR files contained in the lib directory.
 

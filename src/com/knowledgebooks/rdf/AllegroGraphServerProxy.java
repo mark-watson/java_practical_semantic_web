@@ -18,8 +18,6 @@ import java.util.List;
  * Created by IntelliJ IDEA.
  * User: markw
  * Date: Jan 12, 2010
- * Time: 4:43:58 PM
- * To change this template use File | Settings | File Templates.
  */
 public class AllegroGraphServerProxy implements RdfServiceProxy {
   public AllegroGraphServerProxy() throws Exception {

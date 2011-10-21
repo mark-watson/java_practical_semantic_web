@@ -8,11 +8,7 @@ import com.knowledgebooks.public_domain.Stemmer;
 import java.util.*;
 
 /**
- * Created by IntelliJ IDEA.
- * User: markw
- * Date: Mar 2, 2010
- * Time: 9:43:34 PM
- * To change this template use File | Settings | File Templates.
+ * License: LGPL version 3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
  */
 
 /**
