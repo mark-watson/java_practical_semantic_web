@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class TestDBpediaLookupClient {
   public static void main(String[] args) throws Exception {
-    DBpediaLookupClient lookup = new DBpediaLookupClient("City of Flagstaff Arizona");
+    DBpediaLookupClient lookup = new DBpediaLookupClient("berlin");
     for (Map<String, String> bindings : lookup.variableBindings()) {
       System.out.println("result:");
       for (String variableName : bindings.keySet()) {
