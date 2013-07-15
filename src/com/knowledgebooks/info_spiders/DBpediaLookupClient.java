@@ -67,7 +67,7 @@ public class DBpediaLookupClient extends DefaultHandler {
   }
 
   public void endElement(String uri, String localName, String qName) throws SAXException {
-    //System.out.println("startElement " + qName);
+    //System.out.println("endElement " + qName);
     if (qName.equalsIgnoreCase("result")) {
       if (!variableBindings.contains(tempBinding) && containsSearchTerms(tempBinding))
         variableBindings.add(tempBinding);
@@ -76,9 +76,14 @@ public class DBpediaLookupClient extends DefaultHandler {
 
   public void characters(char[] ch, int start, int length) throws SAXException {
     String s = new String(ch, start, length).trim();
-    //System.out.println("characters: " + s);
+    //System.out.println("characters (lastElementName='" + lastElementName + "'): " + s);
     if (s.length() > 0) {
-      if ("Description".equals(lastElementName)) tempBinding.put("Description", s);
+      if ("Description".equals(lastElementName)) {
+        if (tempBinding.get("Description") == null) {
+          tempBinding.put("Description", s);
+        }
+        tempBinding.put("Description", "" + tempBinding.get("Description") + " " + s);
+      }
       if ("URI".equals(lastElementName)) tempBinding.put("URI", s);
       if ("Label".equals(lastElementName)) tempBinding.put("Label", s);
     }
