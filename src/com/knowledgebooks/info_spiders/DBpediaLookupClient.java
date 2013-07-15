@@ -75,8 +75,8 @@ public class DBpediaLookupClient extends DefaultHandler {
   }
 
   public void characters(char[] ch, int start, int length) throws SAXException {
-    //String s = new String(ch, start, length).trim();
-    System.out.println("characters: " + s);
+    String s = new String(ch, start, length).trim();
+    //System.out.println("characters: " + s);
     if (s.length() > 0) {
       if ("Description".equals(lastElementName)) tempBinding.put("Description", s);
       if ("URI".equals(lastElementName)) tempBinding.put("URI", s);
