@@ -27,6 +27,9 @@ You should then be able to run any of the examples by right mouse clicking any f
 
 The directions are similar to those for IntelliJ: create a new Java Eclipse project, import the example directory from this git repository, make sure that all JAR files in the lib directory are imported as external JAR files, and then run the Java test programs in the test directory. Note: I am not an Eclipse user: if anyone will donate directions for installing and running the Eclipse Clojure and Scala plugins, I will add those directions here.
 
+=== 11/11/2013 note: I changed the behavior of the DBPediaLookup class, giving better results
+
+=== 11/11/2013 note: the Clojure code is in the ZIP file CLOJURE_CODE.zip. UnZI this file first if you want to use the CLojure examples.
 
 === 7/13/2010 note: current AG 4.04 release breaks geospatial queries: a new 4.1 release in August will fix this.
 

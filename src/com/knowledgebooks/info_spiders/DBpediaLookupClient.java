@@ -33,13 +33,16 @@ import java.util.*;
 public class DBpediaLookupClient extends DefaultHandler {
   public DBpediaLookupClient(String query) throws Exception {
     this.query = query;
+    //System.out.println("\n query: " + query);
     HttpClient client = new HttpClient();
 
     String query2 = query.replaceAll(" ", "+"); // URLEncoder.encode(query, "utf-8");
+    //System.out.println("\n query2: " + query2);
     HttpMethod method =
       new GetMethod("http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryString=" +
         query2);
     try {
+      System.out.println("\n method: " + method.getURI());
       client.executeMethod(method);
       System.out.println(method);
       InputStream ins = method.getResponseBodyAsStream();
@@ -84,7 +87,10 @@ public class DBpediaLookupClient extends DefaultHandler {
         }
         tempBinding.put("Description", "" + tempBinding.get("Description") + " " + s);
       }
-      if ("URI".equals(lastElementName)) tempBinding.put("URI", s);
+      //if ("URI".equals(lastElementName)) tempBinding.put("URI", s);
+      if ("URI".equals(lastElementName) && s.indexOf("Category")==-1 && tempBinding.get("URI") == null) {
+        tempBinding.put("URI", s);
+      }
       if ("Label".equals(lastElementName)) tempBinding.put("Label", s);
     }
   }
