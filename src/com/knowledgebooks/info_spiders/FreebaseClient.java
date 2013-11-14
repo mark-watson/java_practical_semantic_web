@@ -18,11 +18,11 @@ import java.net.URLEncoder;
  */
 
 public class FreebaseClient {
-  static final String URL = "http://www.freebase.com/api/service/mqlread";
+
+  static final String URL = "https://www.googleapis.com/freebase/v1/mqlread";
 
   public JSON query(String json) throws Exception {
-    String envelope = "{\"qname\":{\"query\":" + json + "}}";
-    String urlStr = URL + "?queries=" + URLEncoder.encode(envelope, "UTF-8");
+    String urlStr = URL + "?query=" + URLEncoder.encode(json, "UTF-8");
     URL url = new URL(urlStr);
     URLConnection con = url.openConnection();
     con.connect();
