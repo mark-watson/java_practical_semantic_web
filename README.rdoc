@@ -10,6 +10,10 @@ I use a variety of 3rd party JAR files contained in the lib directory.
 
 While most of the software is written in Java, I have made an attempt to also support people who prefer JRuby, Clojure, or Scala with wrappers for those languages.
 
+== Donate on Patreon to support all of my projects
+
+Please visit [https://www.patreon.com/markwatson](https://www.patreon.com/markwatson) and sign up to donate $1/month
+
 == Examples work with AllegroGraph 4.0 and Sesame
 
 I have written compatibility wrappers so the book examples can use either the open source Sesame RDF repository
