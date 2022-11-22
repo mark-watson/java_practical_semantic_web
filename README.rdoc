@@ -4,6 +4,11 @@ You can get the free PDF of this book on my Open Content web page http://www.mar
 
 You can order a print book (or a paid for PDF) from Lulu: https://www.lulu.com/commerce/index.php?fBuyContent=10914825
 
+You can read all of my books for free on my
+website [https://markwatson.com](https://markwatson.com).
+
+If you would like to support my work please consider purchasing my books on [Leanpub](https://leanpub.com/u/markwatson) and star my git repositories that you find useful on [GitHub](https://github.com/mark-watson?tab=repositories&q=&type=public). You can also interact with me on social media on [Mastodon](https://mastodon.social/@mark_watson) and [Twitter](https://twitter.com/mark_l_watson).
+
 All of the book software examples that I wrote are licensed using the LGPL license version 3.
 
 I use a variety of 3rd party JAR files contained in the lib directory.
